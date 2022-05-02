@@ -1,0 +1,15 @@
+pragma solidity ^0.4.17;
+
+contract HelloWorld{
+// I created a state variable unsigned integer 
+    uint256 integer;
+
+//  created a function that stores the number into the state variable
+    function storeNumber (uint256 _integer) public {
+        integer = _integer;
+    }
+// created a function that retrieves the stored integer 
+    function retrieveNumber() public view returns (uint256 ) {
+        return integer;
+    }
+}
